@@ -347,7 +347,7 @@ $ tkn pipeline start build-and-deploy \
     --prefix-name build-deploy-api-pipelinerun \
     -w name=shared-workspace,volumeClaimTemplateFile=https://raw.githubusercontent.com/aopatricio/pipelines-tutorial/master/01_pipeline/03_persistent_volume_claim.yaml \
     -p deployment-name=pipelines-vote-api \
-    -p git-url=https://github.com/openshift/pipelines-vote-api.git \
+    -p git-url=https://github.com/aopatricio/pipeline-tekton-vote-api.git \
     -p IMAGE=image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/pipelines-vote-api \
     --use-param-defaults
 
@@ -365,7 +365,7 @@ $ tkn pipeline start build-and-deploy \
     --prefix-name build-deploy-ui-pipelinerun \
     -w name=shared-workspace,volumeClaimTemplateFile=https://raw.githubusercontent.com/aopatricio/pipelines-tutorial/master/01_pipeline/03_persistent_volume_claim.yaml \
     -p deployment-name=pipelines-vote-ui \
-    -p git-url=https://github.com/openshift/pipelines-vote-ui.git \
+    -p git-url=https://github.com/aopatricio/pipeline-tekton-vote-ui.git \
     -p IMAGE=image-registry.openshift-image-registry.svc:5000/pipelines-tutorial/pipelines-vote-ui \
     --use-param-defaults
 
